@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sprite_1.png-19b26a8b650ad50d0ff1b09b069483ac.stex"
+path="res://.import/sprite_2.png-ebe373d6a68e19fbb316f535de4dd669.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/pato/lado/sprite_1.png"
-dest_files=[ "res://.import/sprite_1.png-19b26a8b650ad50d0ff1b09b069483ac.stex" ]
+source_file="res://src/Modules/Duck/@Assets/Side/sprite_2.png"
+dest_files=[ "res://.import/sprite_2.png-ebe373d6a68e19fbb316f535de4dd669.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

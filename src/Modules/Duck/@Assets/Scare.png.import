@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/susto.png-af1664bd1f9edde9a3ae980be3bbc73c.stex"
+path="res://.import/Scare.png-184dd90b6f8d04381fac500d6b772e8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/pato/susto.png"
-dest_files=[ "res://.import/susto.png-af1664bd1f9edde9a3ae980be3bbc73c.stex" ]
+source_file="res://src/Modules/Duck/@Assets/Scare.png"
+dest_files=[ "res://.import/Scare.png-184dd90b6f8d04381fac500d6b772e8a.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cenariofrente.png-6505d04438f1cadb8a7f280e0a91d6bd.stex"
+path="res://.import/cenariofrente.png-fd13bd2c1ce1521b2d546a811c6e17fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/cenariofrente.png"
-dest_files=[ "res://.import/cenariofrente.png-6505d04438f1cadb8a7f280e0a91d6bd.stex" ]
+source_file="res://src/@Main/@Assets/cenariofrente.png"
+dest_files=[ "res://.import/cenariofrente.png-fd13bd2c1ce1521b2d546a811c6e17fa.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

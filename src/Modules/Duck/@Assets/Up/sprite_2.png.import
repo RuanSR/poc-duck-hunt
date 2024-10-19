@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-2c109f0caf5e4cc52c1a1ab95f72e0eb.stex"
+path="res://.import/sprite_2.png-2e2491136e41b6de12ca99984d6c6316.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/pato/morte/2.png"
-dest_files=[ "res://.import/2.png-2c109f0caf5e4cc52c1a1ab95f72e0eb.stex" ]
+source_file="res://src/Modules/Duck/@Assets/Up/sprite_2.png"
+dest_files=[ "res://.import/sprite_2.png-2e2491136e41b6de12ca99984d6c6316.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

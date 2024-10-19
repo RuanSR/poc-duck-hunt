@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/@Main/@Assets/cenariofrente.png" type="Texture" id=1]
+[ext_resource path="res://src/@Main/@Assets/cenariotras.png" type="Texture" id=2]
+[ext_resource path="res://src/Modules/Duck/Duck.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="BackgroundSprite" type="Sprite" parent="."]
+z_index = -6
+texture = ExtResource( 2 )
+centered = false
+
+[node name="FrontSprite" type="Sprite" parent="."]
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Duck" parent="." instance=ExtResource( 3 )]
+position = Vector2( 375, 537 )
