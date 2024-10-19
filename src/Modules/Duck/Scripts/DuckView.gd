@@ -33,12 +33,12 @@ func _on_OnAnimChangeTimer_timeout():
 	
 
 func _on_OnDeadTimer_timeout():
-	$AnimatedSprite.animation = "morte"
+	$AnimatedSprite.animation = "death"
 	queda = -1
 	lado = 0
 	
 
 func _mata():
-	$AnimatedSprite.animation = "susto"
+	$AnimatedSprite.animation = "scare"
 	$OnDeadTimer.start()
 	
