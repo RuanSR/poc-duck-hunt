@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chao.png-b7d8753752b6f978ff22c2efc361ebbd.stex"
+path="res://.import/rindo.png-8cf2f38846f99d79aadd95329486be4f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/chao.png"
-dest_files=[ "res://.import/chao.png-b7d8753752b6f978ff22c2efc361ebbd.stex" ]
+source_file="res://src/Modules/Dog/@Assets/rindo.png"
+dest_files=[ "res://.import/rindo.png-8cf2f38846f99d79aadd95329486be4f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

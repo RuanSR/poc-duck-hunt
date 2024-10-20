@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/captura.png-c4b7ff495cfe9108883c61103d6a8e37.stex"
+path="res://.import/captura.png-44d60c034a031f7eb2bd3be21f39823f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/cao/captura.png"
-dest_files=[ "res://.import/captura.png-c4b7ff495cfe9108883c61103d6a8e37.stex" ]
+source_file="res://src/Modules/Dog/@Assets/captura.png"
+dest_files=[ "res://.import/captura.png-44d60c034a031f7eb2bd3be21f39823f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
