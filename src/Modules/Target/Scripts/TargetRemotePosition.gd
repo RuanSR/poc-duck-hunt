@@ -45,15 +45,15 @@ func _process_target_pos(screen_width: int = 0, screen_height: int = 0):
 		
 		var coords = data.result["gyroscope"]
 		
+		var x = float(coords.x)
 		var y = float(coords.y)
-		var z = float(coords.z)
 		
 		
-		smooth_x = alpha * smooth_x + (1.0 - alpha) * (z * screen_width /2)
+		smooth_x = alpha * smooth_x + (1.0 - alpha) * (x * screen_width /2)
 		smooth_y = alpha * smooth_y + (1.0 - alpha) * (y * screen_height /2)
 		
-		var screen_x = clamp(- smooth_x, 0, screen_width)
-		var screen_y = clamp(smooth_y, 0, screen_height)
+		var screen_x = clamp((smooth_x + screen_width /2), 0, screen_width)
+		var screen_y = clamp((smooth_y + screen_height /2), 0, screen_height)
 		
 		remote_position = Vector2(screen_x, screen_y)
 #		print("Mira movida para: %s" % str(target.position))
