@@ -5,11 +5,18 @@ var _duck_prefab = preload("res://src/Modules/Duck/Duck.tscn")
 var fly_away_count: int = 0
 var duck_catch_count: int  = 0
 
+var instance_target_player: Node2D = preload("res://src/Modules/Target/Target.tscn").instance()
+
+var _game_server: GameServer = GameServer.new()
+
 func _ready():
+	_game_server.start(self)
 	$OnGenerateDuckTimer.start()
+	add_child(instance_target_player)
 
 func _process(delta):
-	$Target.position = get_local_mouse_position()
+	_game_server.poll()
+	
 
 func create_duck():
 	var new_duck = _duck_prefab.instance()
@@ -26,13 +33,11 @@ func _on_OnWaitTimer_timeout():
 	$OnGenerateDuckTimer.start()
 	
 
-
 func _on_GoalTop_body_entered(body):
 	fly_away_count = 1
 	ducks_on_screen -= 1
 	update_turn()
 	
-
 
 func _on_GoalBotton_body_entered(body):
 	duck_catch_count += 1
@@ -48,3 +53,4 @@ func update_turn():
 			fly_away_count = 0
 		else:
 			$Dog/AnimatedSprite.play("success")
+	

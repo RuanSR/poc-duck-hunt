@@ -14,6 +14,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Modules/Duck/Scripts/DuckView.gd"
 }, {
+"base": "Reference",
+"class": "GameServer",
+"language": "GDScript",
+"path": "res://src/Server/game_server.gd"
+}, {
+"base": "Reference",
+"class": "TargetRemotePosition",
+"language": "GDScript",
+"path": "res://src/Modules/Target/Scripts/TargetRemotePosition.gd"
+}, {
 "base": "Area2D",
 "class": "TargetView",
 "language": "GDScript",
@@ -21,6 +31,8 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "DuckView": "",
+"GameServer": "",
+"TargetRemotePosition": "",
 "TargetView": ""
 }
 
@@ -29,6 +41,10 @@ _global_script_class_icons={
 config/name="DuckHunt"
 run/main_scene="res://src/@Main/Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ClientManager="*res://src/Manager/client_manager.gd"
 
 [display]
 
