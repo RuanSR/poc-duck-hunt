@@ -8,24 +8,32 @@ var value_of_screen = Vector2()
 
 var remote_client: TargetRemotePosition = null
 
+enum INPUT_OPTION { REMOTE, MOUSE, JOYSTICK }
+
+var input_controller
+
 func _ready():
 	update_screen_size()
-	pass
+	input_controller = INPUT_OPTION.MOUSE
 
 func _process(delta):
 	update_screen_size()
 	
+	# Definir a nov posição de acordo com a entrada definida
+	if input_controller == INPUT_OPTION.MOUSE:
+		position = get_global_mouse_position()
+	elif input_controller == INPUT_OPTION.REMOTE:
+		if (remote_client != null):
+			position = remote_client.remote_position(screen_width, screen_height)
+			
+			if remote_client.has_shoot():
+				remote_client.set_shoot_value(false)
+				on_fire()
+	
 	if ClientManager.get_client_list_size() >= 0 and remote_client == null:
 		remote_client = ClientManager.get_client_by_index(0)
+		input_controller = INPUT_OPTION.REMOTE
 	
-	if (remote_client != null):
-		position = remote_client.remote_position(screen_width, screen_height)
-		
-		if remote_client.has_shoot():
-			remote_client.set_shoot_value(false)
-			on_fire()
-	else:
-		position = get_global_mouse_position()
 	
 
 func _on_Target_body_entered(body):
@@ -35,6 +43,11 @@ func _on_Target_body_entered(body):
 func _input(event):
 	if (Input.is_action_just_pressed("on_fire")):
 		on_fire()
+	
+	## SWITCH INPUT CONTROLLER
+	if input_controller != INPUT_OPTION.MOUSE and event is InputEventMouseButton:
+		input_controller = INPUT_OPTION.MOUSE
+		remote_client = null
 	
 
 func on_fire():

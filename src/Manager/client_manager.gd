@@ -7,6 +7,11 @@ func add_new_client(id: int) -> void:
 	_client_list.append(client)
 	
 
+func remove_client(id: int) -> void:
+	for i in _client_list:
+		if i != null and i.id == id:
+			_client_list.erase(i)
+
 func add_new_data(id: int, data: JSONParseResult) -> void:
 	for client in _client_list:
 		if client.id == id:

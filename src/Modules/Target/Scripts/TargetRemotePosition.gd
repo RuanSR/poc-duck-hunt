@@ -56,7 +56,6 @@ func _process_target_pos(screen_width: int = 0, screen_height: int = 0):
 		var screen_y = clamp((smooth_y + screen_height /2), 0, screen_height)
 		
 		remote_position = Vector2(screen_x, screen_y)
-#		print("Mira movida para: %s" % str(target.position))
 		
 	else:
 		print("Erro ao processar JSON: %s" % str(data.error))

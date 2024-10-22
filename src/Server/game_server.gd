@@ -13,6 +13,7 @@ func _close_request(id, code, reason):
 	print("Client %d disconnecting with code: %d, reason: %s" % [id, code, reason])
 
 func _disconnected(id, was_clean = false):
+	ClientManager.remove_client(id)
 	print("Client %d disconnected, clean: %s" % [id, str(was_clean)])
 
 func _on_data(id: int):
@@ -22,8 +23,7 @@ func _on_data(id: int):
 	send_message(id, "Olá, sou o server!")
 	
 	if result.error == OK:
-		if result.result.has("calibrate"):
-			print("calibrate")
+		if result.result.has("on_shoot"):
 			ClientManager.set_shoot_value(id)
 			pass
 		ClientManager.add_new_data(id, result)
