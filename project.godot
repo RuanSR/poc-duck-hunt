@@ -8,19 +8,62 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "DuckView",
+"language": "GDScript",
+"path": "res://src/Modules/Duck/Scripts/DuckView.gd"
+}, {
+"base": "Reference",
+"class": "GameServer",
+"language": "GDScript",
+"path": "res://src/Server/game_server.gd"
+}, {
+"base": "Reference",
+"class": "TargetRemotePosition",
+"language": "GDScript",
+"path": "res://src/Modules/Target/Scripts/TargetRemotePosition.gd"
+}, {
+"base": "Area2D",
+"class": "TargetView",
+"language": "GDScript",
+"path": "res://src/Modules/Target/Scripts/TargetView.gd"
+} ]
+_global_script_class_icons={
+"DuckView": "",
+"GameServer": "",
+"TargetRemotePosition": "",
+"TargetView": ""
+}
+
 [application]
 
 config/name="DuckHunt"
+run/main_scene="res://src/@Main/Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ClientManager="*res://src/Manager/client_manager.gd"
 
 [display]
 
 window/size/width=768
 window/size/height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+on_fire={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [physics]
 
