@@ -10,6 +10,28 @@
 [node name="Main" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="InfoStatusControl" type="Control" parent="."]
+margin_left = 3.0
+margin_top = 6.0
+margin_right = 43.0
+margin_bottom = 46.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HostLabel" type="Label" parent="InfoStatusControl"]
+margin_right = 43.0
+margin_bottom = 14.0
+text = "HOST: "
+uppercase = true
+
+[node name="HostInfo" type="Label" parent="InfoStatusControl"]
+margin_left = 41.0
+margin_right = 81.0
+margin_bottom = 14.0
+text = "*"
+uppercase = true
+
 [node name="BackgroundSprite" type="Sprite" parent="."]
 z_index = -6
 texture = ExtResource( 2 )

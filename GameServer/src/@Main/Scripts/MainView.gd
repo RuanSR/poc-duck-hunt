@@ -10,9 +10,17 @@ var instance_target_player: Node2D = preload("res://src/Modules/Target/Target.ts
 var _game_server: GameServer = GameServer.new()
 
 func _ready():
+	$InfoStatusControl/HostInfo.text = get_ipv4_server()
 	_game_server.start(self)
 	$OnGenerateDuckTimer.start()
 	add_child(instance_target_player)
+
+func get_ipv4_server() -> String:
+	var ip
+	for address in IP.get_local_addresses():
+		if (address.split('.').size() == 4):
+			ip = address
+	return ip
 
 func _process(delta):
 	_game_server.poll()
