@@ -9,6 +9,7 @@ func _ready():
 	randomize()
 	$OnMoveChangeTimer.wait_time = rand_range(0.4, 2)
 	$OnAnimChangeTimer.wait_time = rand_range(0.6, 1)
+	$OnQuackTimer.wait_time = rand_range(0.8, 2)
 	
 
 func _process(delta):
@@ -41,4 +42,9 @@ func _on_OnDeadTimer_timeout():
 func _mata():
 	$AnimatedSprite.animation = "scare"
 	$OnDeadTimer.start()
+	$AudioStreamPlayer.stop()
+	
+
+func _on_OnQuackTimer_timeout():
+	$AudioStreamPlayer.play()
 	

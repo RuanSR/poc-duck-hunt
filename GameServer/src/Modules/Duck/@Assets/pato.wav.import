@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/pato.wav-0c6f2c3d817edf463c3d7a6b33afb207.sample"
+path="res://.import/pato.wav-786dd23e7b6b357f9a338cebdb4fb559.sample"
 
 [deps]
 
-source_file="res://src/@Assets/sons/pato.wav"
-dest_files=[ "res://.import/pato.wav-0c6f2c3d817edf463c3d7a6b33afb207.sample" ]
+source_file="res://src/Modules/Duck/@Assets/pato.wav"
+dest_files=[ "res://.import/pato.wav-786dd23e7b6b357f9a338cebdb4fb559.sample" ]
 
 [params]
 

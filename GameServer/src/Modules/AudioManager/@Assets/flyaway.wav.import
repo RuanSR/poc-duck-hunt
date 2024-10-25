@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/round.wav-954d36ea741182da171347b24de09cfd.sample"
+path="res://.import/flyaway.wav-ee699ad86b196d5e507bd85954b4e722.sample"
 
 [deps]
 
-source_file="res://src/@Assets/sons/round.wav"
-dest_files=[ "res://.import/round.wav-954d36ea741182da171347b24de09cfd.sample" ]
+source_file="res://src/Modules/AudioManager/@Assets/flyaway.wav"
+dest_files=[ "res://.import/flyaway.wav-ee699ad86b196d5e507bd85954b4e722.sample" ]
 
 [params]
 
