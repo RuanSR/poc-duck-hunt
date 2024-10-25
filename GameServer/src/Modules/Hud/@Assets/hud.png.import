@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hud.png-db8cdc0a0569ea26f25a22ef5316b82a.stex"
+path="res://.import/hud.png-34e81a6acba18fc93f2fa0198240d358.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/@Assets/hud.png"
-dest_files=[ "res://.import/hud.png-db8cdc0a0569ea26f25a22ef5316b82a.stex" ]
+source_file="res://src/Modules/Hud/@Assets/hud.png"
+dest_files=[ "res://.import/hud.png-34e81a6acba18fc93f2fa0198240d358.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

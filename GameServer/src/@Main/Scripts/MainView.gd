@@ -5,6 +5,8 @@ var _duck_prefab = preload("res://src/Modules/Duck/Duck.tscn")
 var fly_away_count: int = 0
 var duck_catch_count: int  = 0
 
+onready var hub_view: HudView = $HUD
+
 var instance_target_player: Node2D = preload("res://src/Modules/Target/Target.tscn").instance()
 
 var _game_server: GameServer = GameServer.new()
@@ -24,6 +26,7 @@ func get_ipv4_server() -> String:
 
 func _process(delta):
 	_game_server.poll()
+	hub_view.update_score(duck_catch_count)
 	
 
 func create_duck():
@@ -59,6 +62,7 @@ func update_turn():
 		if fly_away_count == 1:
 			$Dog/AnimatedSprite.play("fail")
 			fly_away_count = 0
+			duck_catch_count = 0
 		else:
 			$Dog/AnimatedSprite.play("success")
 	
