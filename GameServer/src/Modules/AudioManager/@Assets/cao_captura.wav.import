@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/cao_captura.wav-dae1011ada0e3d0577b27e2e237d9da3.sample"
+path="res://.import/cao_captura.wav-a372770137fd0fafa94642489c646913.sample"
 
 [deps]
 
-source_file="res://src/@Assets/sons/cao_captura.wav"
-dest_files=[ "res://.import/cao_captura.wav-dae1011ada0e3d0577b27e2e237d9da3.sample" ]
+source_file="res://src/Modules/AudioManager/@Assets/cao_captura.wav"
+dest_files=[ "res://.import/cao_captura.wav-a372770137fd0fafa94642489c646913.sample" ]
 
 [params]
 

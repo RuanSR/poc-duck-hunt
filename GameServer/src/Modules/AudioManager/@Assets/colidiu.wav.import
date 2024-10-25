@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/colidiu.wav-5984ee146b03047f4993c012be3b2639.sample"
+path="res://.import/colidiu.wav-e243f9fa49a52d65f9e09a9975f3448d.sample"
 
 [deps]
 
-source_file="res://src/@Assets/sons/colidiu.wav"
-dest_files=[ "res://.import/colidiu.wav-5984ee146b03047f4993c012be3b2639.sample" ]
+source_file="res://src/Modules/AudioManager/@Assets/colidiu.wav"
+dest_files=[ "res://.import/colidiu.wav-e243f9fa49a52d65f9e09a9975f3448d.sample" ]
 
 [params]
 

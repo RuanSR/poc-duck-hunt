@@ -1,6 +1,6 @@
 class_name TargetView extends Area2D
 
-var current_duck
+var current_duck: DuckView
 
 var screen_width: float
 var screen_height: float

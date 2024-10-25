@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "AudioManager",
+"language": "GDScript",
+"path": "res://src/Modules/AudioManager/Scripts/AudioManager.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "DuckView",
 "language": "GDScript",
@@ -35,6 +40,7 @@ _global_script_classes=[ {
 "path": "res://src/Modules/Target/Scripts/TargetView.gd"
 } ]
 _global_script_class_icons={
+"AudioManager": "",
 "DuckView": "",
 "GameServer": "",
 "HudView": "",

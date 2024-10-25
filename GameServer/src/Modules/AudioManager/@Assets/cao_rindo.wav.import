@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/cao_rindo.wav-5c1eeea2d2b00f43a861418526b7de74.sample"
+path="res://.import/cao_rindo.wav-dd4542fb0c56ce24085aa1e3bf623802.sample"
 
 [deps]
 
-source_file="res://src/@Assets/sons/cao_rindo.wav"
-dest_files=[ "res://.import/cao_rindo.wav-5c1eeea2d2b00f43a861418526b7de74.sample" ]
+source_file="res://src/Modules/AudioManager/@Assets/cao_rindo.wav"
+dest_files=[ "res://.import/cao_rindo.wav-dd4542fb0c56ce24085aa1e3bf623802.sample" ]
 
 [params]
 
