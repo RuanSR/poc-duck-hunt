@@ -29,11 +29,11 @@ Game disponível na minha dashboardo no Itch.io, [ruansr.itch.io](https://ruansr
 4 - Selecione o projeto que deseja rodar (Game Server).
 5 - Jogue!
 
-### Para utilizar o Joystick WebSocket
+### Para utilizar o Joystick WebSocket (Somente Android)
 
 Caminho fácil:
-- Com o projeto já clonado, o apk está disponível na pasta exported dentro da pasta WSJoystick.
-- Após encontrar, basta instalar em seu dispositivo (o app não requer nenhuma permissao especial).
+- Baixe o apk disponível na [página de release](https://github.com/RuanSR/poc-duck-hunt/releases/tag/v1.0)
+- Instale em seu dispositivo (o app não requer nenhuma permissao especial).
 
 Caminho difícil:
 - Caso queira seguir este caminho, sugiro que leia como fazer isso utilizando o passo a passo disponível na propria [documentação](https://docs.godotengine.org/en/3.5/tutorials/export/exporting_projects.html) da engine ;)
